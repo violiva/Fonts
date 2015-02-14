@@ -12,6 +12,9 @@
 		ADE1D0E21A8F606A00F1F880 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE1D0E11A8F606A00F1F880 /* Images.xcassets */; };
 		ADE1D0E51A8F606A00F1F880 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE1D0E31A8F606A00F1F880 /* LaunchScreen.xib */; };
 		ADE1D0F11A8F606A00F1F880 /* FontsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE1D0F01A8F606A00F1F880 /* FontsTests.m */; };
+		ADE1D0FC1A8F609E00F1F880 /* VOSFontsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE1D0FB1A8F609E00F1F880 /* VOSFontsTableViewController.m */; };
+		ADE1D1011A8FC54300F1F880 /* VOSFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE1D0FF1A8FC54300F1F880 /* VOSFontViewController.m */; };
+		ADE1D1021A8FC54300F1F880 /* VOSFontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE1D1001A8FC54300F1F880 /* VOSFontViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 		ADE1D0EA1A8F606A00F1F880 /* FontsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE1D0EF1A8F606A00F1F880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADE1D0F01A8F606A00F1F880 /* FontsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontsTests.m; sourceTree = "<group>"; };
+		ADE1D0FA1A8F609E00F1F880 /* VOSFontsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSFontsTableViewController.h; sourceTree = "<group>"; };
+		ADE1D0FB1A8F609E00F1F880 /* VOSFontsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSFontsTableViewController.m; sourceTree = "<group>"; };
+		ADE1D0FE1A8FC54300F1F880 /* VOSFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSFontViewController.h; sourceTree = "<group>"; };
+		ADE1D0FF1A8FC54300F1F880 /* VOSFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSFontViewController.m; sourceTree = "<group>"; };
+		ADE1D1001A8FC54300F1F880 /* VOSFontViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VOSFontViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 				ADE1D0E11A8F606A00F1F880 /* Images.xcassets */,
 				ADE1D0E31A8F606A00F1F880 /* LaunchScreen.xib */,
 				ADE1D0DA1A8F606A00F1F880 /* Supporting Files */,
+				ADE1D0FD1A8F640D00F1F880 /* Controllers */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -109,6 +118,18 @@
 				ADE1D0EF1A8F606A00F1F880 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADE1D0FD1A8F640D00F1F880 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADE1D0FA1A8F609E00F1F880 /* VOSFontsTableViewController.h */,
+				ADE1D0FB1A8F609E00F1F880 /* VOSFontsTableViewController.m */,
+				ADE1D0FE1A8FC54300F1F880 /* VOSFontViewController.h */,
+				ADE1D0FF1A8FC54300F1F880 /* VOSFontViewController.m */,
+				ADE1D1001A8FC54300F1F880 /* VOSFontViewController.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE1D1021A8FC54300F1F880 /* VOSFontViewController.xib in Resources */,
 				ADE1D0E51A8F606A00F1F880 /* LaunchScreen.xib in Resources */,
 				ADE1D0E21A8F606A00F1F880 /* Images.xcassets in Resources */,
 			);
@@ -210,6 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE1D1011A8FC54300F1F880 /* VOSFontViewController.m in Sources */,
+				ADE1D0FC1A8F609E00F1F880 /* VOSFontsTableViewController.m in Sources */,
 				ADE1D0E01A8F606A00F1F880 /* AppDelegate.m in Sources */,
 				ADE1D0DD1A8F606A00F1F880 /* main.m in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "VOSFontsTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,10 +18,42 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
     // Override point for customization after application launch.
+    [self customizeAppearance];
+    
+    
+    VOSFontsTableViewController *fontsVC = [[VOSFontsTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:fontsVC];
+    self.window.rootViewController = navVC;
+    
+
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)customizeAppearance{
+
+    UIColor *darkRed = [UIColor colorWithRed:168.0/255.0
+                                       green:11.0/255.0
+                                        blue:31.0/255.0
+                                       alpha:0.5];
+
+    UIColor *clearGrey = [UIColor colorWithRed:227.0/255.0
+                                         green:227.0/255.0
+                                          blue:227.0/222.0
+                                         alpha:1];
+    
+    [[UITableViewHeaderFooterView appearance] setTintColor:clearGrey];
+    [[UINavigationBar appearance] setTintColor:[UIColor greenColor]];
+
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor orangeColor],
+                                   NSFontAttributeName: [UIFont fontWithName:@"Papyrus" size:20]}];
+
+    [[UITableView appearance] setSectionIndexColor:darkRed];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
