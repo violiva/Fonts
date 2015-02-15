@@ -56,7 +56,7 @@
 }
 
 -(NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView{
-    NSMutableArray *indexFont = [NSMutableArray arrayWithCapacity:25];
+    NSMutableArray *indexFont = [NSMutableArray arrayWithCapacity:26];
     for ( NSString *familyName in self.familyNames){
         NSString *initCap = [familyName substringToIndex:1];
         if (![indexFont containsObject:initCap]){
